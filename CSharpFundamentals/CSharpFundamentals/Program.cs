@@ -2,9 +2,14 @@
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CSharpFundamentals
 {
+    public class Person1
+    {
+        public int Age;
+    }
     public enum ShippingMethod
     {
         RegularAirMail = 1,
@@ -13,8 +18,24 @@ namespace CSharpFundamentals
     }
     class Program
     {
+        public static void Increment(int number)
+        {
+            number += 10;
+        }
+
+        public static void MakeOld(Person1 person)
+        {
+            person.Age += 10;
+        }
         static void Main(string[] args)
         {
+            var number = 1;
+            Increment(number);
+            Console.WriteLine(number);
+
+            var person = new Person1() { Age = 20 };
+            MakeOld(person);
+            Console.WriteLine(person.Age);
             //var a = 10;
             //var b = a;
             //b++;
