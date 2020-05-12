@@ -15,16 +15,26 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            var method = ShippingMethod.Express;
-            Console.WriteLine((int)method);
+            //var a = 10;
+            //var b = a;
+            //b++;
+            //Console.WriteLine(String.Format("a: {0}, b:{1}", a, b));
 
-            var methodId = 3;
-            Console.WriteLine((ShippingMethod)methodId);
+            //var array1 = new int[3] { 1, 2, 3 };
+            //var array2 = array1;
+            //array2[0] = 0;
+            //Console.WriteLine(String.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
 
-            Console.WriteLine(method.ToString());
+            //var method = ShippingMethod.Express;
+            //Console.WriteLine((int)method);
 
-            var methodName = "Express";
-            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            //var methodId = 3;
+            //Console.WriteLine((ShippingMethod)methodId);
+
+            //Console.WriteLine(method.ToString());
+
+            //var methodName = "Express";
+            //var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
 
             //var john = new Person();
             //john.FirstName = "John";
